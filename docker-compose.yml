@@ -6,4 +6,11 @@ services:
     build: .
     ports:
       - 3890:80
+    volumes:
+      - tmp_vol:/data
 
+volumes:
+  tmp_vol:
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
