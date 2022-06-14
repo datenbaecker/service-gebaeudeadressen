@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  address-provider:
+    container_name: address_provider
+    build: .
+    ports:
+      - 3890:80
+
